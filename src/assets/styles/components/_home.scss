@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  background-image: url("../assets/img/svg/hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h1 {
+  padding-left: 0;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #451cb5;
+}
+.hero .info {
+  height: 3rem * 8;
+}
+
+.hero p,
+#typed,
+.typed-cursor {
+  font-size: 1rem;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 2px solid #795bcd;
+}
+
+.hero .social-links {
+  margin-top: 4rem;
+}
+
+.hero .social-links a {
+  font-size: 2rem;
+  display: inline-block;
+  color: rgba(#d2d2d2, 0.75);
+  line-height: 1;
+  margin-right: 2rem;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: #795bcd;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+.site-btn {
+  border-radius: 0;
+}

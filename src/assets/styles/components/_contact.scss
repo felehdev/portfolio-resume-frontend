@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item + .info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  color: $white;
+  background: rgba($primary, 0.25);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: $primary;
+  color: $white;
+}
+
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: $dark;
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type="submit"] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 0;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+/*---------------------
+	Contact section
+-----------------------*/
+#contact-form {
+  display: block;
+  width: 100%;
+}
+
+#contact-form input {
+  background-color: transparent;
+  padding-left: 25px;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid $primary;
+  margin-bottom: 30px;
+  //font-size: 13px;
+}
+
+#contact-form textarea {
+  padding-left: 25px;
+  height: 200px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid $primary;
+  margin-bottom: 30px;
+  //font-size: 13px;
+  background-color: transparent;
+}
+
+#contact-form ::-webkit-input-placeholder {
+  //font-style: italic;
+}
+
+#contact-form :-ms-input-placeholder {
+  //font-style: italic;
+}
+
+#contact-form ::-ms-input-placeholder {
+  //font-style: italic;
+}
+
+#contact-form ::placeholder {
+  //font-style: italic;
+}
