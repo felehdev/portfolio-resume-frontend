@@ -1,6 +1,7 @@
 import "./assets/styles/main.scss";
 import useInitApp from "./hooks/useInitApp";
 import Home from "./components/Home";
+import Contact from "./components/Contact";
 
 function App() {
   useInitApp();
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Home />
+      <Contact />
     </>
   );
 }
