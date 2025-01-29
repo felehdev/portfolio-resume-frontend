@@ -1,0 +1,26 @@
+/*** max-width 1600px ***/
+@include media-breakpoint-down(xxxl) {
+}
+
+/*** max-width 1440px ***/
+@include media-breakpoint-down(xxl) {
+}
+
+/*** max-width 1205px ***/
+@include media-breakpoint-down(xl) {
+}
+
+/*** max-width 992px ***/
+@include media-breakpoint-down(lg) {
+}
+
+/*** max-width 768px ***/
+@include media-breakpoint-down(md) {
+}
+
+/*** max-width 576px ***/
+@include media-breakpoint-down(sm) {
+  :root {
+    font-size: $font-size-sm;
+  }
+}
