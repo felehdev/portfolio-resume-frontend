@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
     <article id="contact" className="contact section spad">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-xl-8 offset-xl-2">
+          <div className="col">
             <div className="section__header" data-aos="fade-up">
               <h1 className="section__title">Contact Me</h1>
               <p>

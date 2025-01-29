@@ -13,9 +13,11 @@
   color: $primary;
   font-size: 32px;
   font-weight: 700;
+  font-variant-caps: small-caps;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  text-transform: capitalize;
 }
 
 .section__title:before {
