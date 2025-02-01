@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  background-image: url("../img/svg/hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  background: rgba($white, 0.75);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h1 {
+  font-size: $h1-font-size * 3;
+  font-weight: 700;
+  color: $secondary;
+}
+
+.hero .info {
+  height: $h1-font-size * 5;
+}
+
+.hero p,
+#typed,
+.typed-cursor {
+  font-size: $h1-font-size;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 2px solid $primary;
+}
+
+.hero .social-links {
+  margin-top: 4rem;
+}
+
+.hero .social-links a {
+  font-size: 2rem;
+  display: inline-block;
+  color: rgba($gray, 0.75);
+  line-height: 1;
+  margin-right: 2rem;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: $primary;
+}
