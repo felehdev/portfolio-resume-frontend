@@ -1,5 +1,5 @@
-import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 const Home = () => {
   const element1 = useRef<HTMLParagraphElement | null>(null);
