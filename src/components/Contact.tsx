@@ -6,10 +6,7 @@ const Contact = () => {
           <div className="col">
             <div className="section__header" data-aos="fade-up">
               <h1 className="section__title">Contact Me</h1>
-              <p>
-                Please don’t hesitate to reach out with any questions, I’ll get
-                back to you as quickly as possible!
-              </p>
+              <p>Please don't hesitate to reach out with any questions, I'll get back to you as quickly as possible!</p>
             </div>
             <form id="contact-form" data-aos="fade" data-aos-delay="100">
               <div className="row">
@@ -31,9 +28,7 @@ const Contact = () => {
                     name="email"
                     placeholder="E-mail"
                   />
-                  <div className="invalid-feedback d-block is-invalid">
-                    invalid email
-                  </div>
+                  <div className="invalid-feedback d-block is-invalid">invalid email</div>
                 </div>
                 <div className="form-group col-sm-4">
                   <input
@@ -56,9 +51,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="text-md-right">
-                <button className="btn btn-outline-primary btn-lg rounded-0 submit">
-                  Send message
-                </button>
+                <button className="btn btn-outline-primary btn-lg rounded-0 submit">Send message</button>
               </div>
             </form>
           </div>

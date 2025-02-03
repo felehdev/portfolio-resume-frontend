@@ -1,5 +1,6 @@
-import "./assets/styles/main.scss";
 import Home from "./components/Home";
+
+import "./assets/styles/main.scss";
 
 function App() {
   return (
