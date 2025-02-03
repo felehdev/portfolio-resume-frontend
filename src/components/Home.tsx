@@ -1,4 +1,47 @@
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
+
 const Home = () => {
+  const element1 = useRef<HTMLParagraphElement | null>(null);
+  const element2 = useRef<HTMLParagraphElement | null>(null);
+  const element3 = useRef<HTMLParagraphElement | null>(null);
+
+  async function typeParagraphs(): Promise<void> {
+    const paragraphs = [element1.current, element2.current, element3.current];
+    console.log(paragraphs);
+
+    for (const [index, p] of paragraphs.entries()) {
+      await new Promise<void>((resolve) => {
+        const typedElement = p?.nextElementSibling;
+        if (!typedElement) return resolve();
+
+        new Typed(typedElement, {
+          strings: [p?.innerHTML],
+          typeSpeed: 100,
+          onComplete: () => {
+            resolve();
+            if (index === paragraphs.length - 1) return;
+            typedElement.nextElementSibling?.remove();
+          },
+        });
+      });
+    }
+  }
+
+  useEffect(() => {
+    const initTyped = () => {
+      if (typeof Typed === "undefined") return;
+      typeParagraphs();
+    };
+
+    const handleLoad = () => initTyped();
+
+    if (document.readyState === "complete") initTyped();
+    else window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
   return (
     <section id="hero" className="hero section">
       <div className="container">
@@ -10,11 +53,13 @@ const Home = () => {
             <h1>Hello, World!</h1>
             <div className="info">
               <div className="typed-greeting mt-3">
-                <p className="visually-hidden">I'm Mourad Elfeleh.</p>
+                <p className="visually-hidden" ref={element1}>
+                  I'm Mourad Elfeleh.
+                </p>
                 <span className="typed-cursor" aria-hidden="true"></span>
               </div>
               <div className="typed-greeting mt-3">
-                <p className="visually-hidden">
+                <p className="visually-hidden" ref={element2}>
                   A{" "}
                   <strong className="text-primary">
                     Fullstack Web developer
@@ -24,7 +69,7 @@ const Home = () => {
                 <span className="typed-cursor" aria-hidden="true"></span>
               </div>
               <div className="typed-greeting mt-3">
-                <p className="visually-hidden">
+                <p className="visually-hidden" ref={element3}>
                   Nice to meet you <i className="bi bi-emoji-smile"></i>
                 </p>
                 <span className="typed-cursor" aria-hidden="true"></span>
