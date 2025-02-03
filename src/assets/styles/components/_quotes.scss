@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------
+# quotes Section
+--------------------------------------------------------------*/
+.quotes .quotes-carousel,
+.quotes .quotes-slider {
+  overflow: hidden;
+}
+
+.quotes .quote-item .quote-content {
+  border-left: 3px solid $primary;
+  padding-left: 30px;
+}
+
+.quotes .quote-item .quote-img {
+  border-radius: 50%;
+  border: 4px solid $white;
+  margin: 0 auto;
+}
+
+.quotes .quote-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.quotes .quote-item h4 {
+  font-size: 14px;
+  color: $gray;
+  margin: 0 0 10px 0;
+}
+
+.quotes .quote-item .quote-icon-left,
+.quotes .quote-item .quote-icon-right {
+  color: rgba($primary, 0.5);
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.quotes .quote-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.quotes .quote-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.quotes .quote-item p {
+  font-style: italic;
+}
+
+.quotes .swiper-wrapper {
+  height: auto;
+}
+
+.quotes .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.quotes .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba($gray, 0.25);
+  opacity: 1;
+}
+
+.quotes .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $primary;
+}
