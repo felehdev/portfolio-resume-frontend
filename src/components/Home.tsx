@@ -8,7 +8,6 @@ const Home = () => {
 
   async function typeParagraphs(): Promise<void> {
     const paragraphs = [element1.current, element2.current, element3.current];
-    console.log(paragraphs);
 
     for (const [index, p] of paragraphs.entries()) {
       await new Promise<void>((resolve) => {

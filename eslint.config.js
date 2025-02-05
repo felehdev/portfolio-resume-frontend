@@ -8,10 +8,10 @@ import prettier from "eslint-plugin-prettier";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -59,6 +59,7 @@ export default [
     },
 
     rules: {
+      "no-console": "error",
       "prettier/prettier": "error",
       "react/react-in-jsx-scope": "off",
       "react/no-unescaped-entities": "off",
