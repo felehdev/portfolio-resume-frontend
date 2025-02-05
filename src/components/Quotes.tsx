@@ -29,11 +29,7 @@ const Quotes = () => {
                     </div>
                   </div>
                   <div className="col-lg-2 text-center">
-                    <img
-                      src="src/assets/img/quotes/socrates.jpg"
-                      className="img-fluid quote-img"
-                      alt="Socrates"
-                    />
+                    <img src="src/assets/img/quotes/socrates.jpg" className="img-fluid quote-img" alt="Socrates" />
                   </div>
                 </div>
               </div>
@@ -45,10 +41,7 @@ const Quotes = () => {
                     <div className="quote-content">
                       <p>
                         <i className="bi bi-quote quote-icon-left"></i>
-                        <span>
-                          Strength does not come from physical capacity. It
-                          comes from an indomitable will.
-                        </span>
+                        <span>Strength does not come from physical capacity. It comes from an indomitable will.</span>
                         <i className="bi bi-quote quote-icon-right"></i>
                       </p>
                       <h3>Mahatma Gandhi</h3>
@@ -56,11 +49,7 @@ const Quotes = () => {
                     </div>
                   </div>
                   <div className="col-lg-2 text-center">
-                    <img
-                      src="src/assets/img/quotes/gandhi.jpg"
-                      className="img-fluid quote-img"
-                      alt="Mahatma Gandhi"
-                    />
+                    <img src="src/assets/img/quotes/gandhi.jpg" className="img-fluid quote-img" alt="Mahatma Gandhi" />
                   </div>
                 </div>
               </div>
@@ -72,10 +61,7 @@ const Quotes = () => {
                     <div className="quote-content">
                       <p>
                         <i className="bi bi-quote quote-icon-left"></i>
-                        <span>
-                          We are what we repeatedly do. Excellence, then, is not
-                          an act, but a habit.
-                        </span>
+                        <span>We are what we repeatedly do. Excellence, then, is not an act, but a habit.</span>
                         <i className="bi bi-quote quote-icon-right"></i>
                       </p>
                       <h3>Aristotle</h3>
@@ -83,11 +69,7 @@ const Quotes = () => {
                     </div>
                   </div>
                   <div className="col-lg-2 text-center">
-                    <img
-                      src="src/assets/img/quotes/aristotle.jpg"
-                      className="img-fluid quote-img"
-                      alt="Aristotle"
-                    />
+                    <img src="src/assets/img/quotes/aristotle.jpg" className="img-fluid quote-img" alt="Aristotle" />
                   </div>
                 </div>
               </div>
@@ -100,8 +82,7 @@ const Quotes = () => {
                       <p>
                         <i className="bi bi-quote quote-icon-left"></i>
                         <span>
-                          Success is not final, failure is not fatal: It is the
-                          courage to continue that counts.
+                          Success is not final, failure is not fatal: It is the courage to continue that counts.
                         </span>
                         <i className="bi bi-quote quote-icon-right"></i>
                       </p>
@@ -126,9 +107,7 @@ const Quotes = () => {
                     <div className="quote-content">
                       <p>
                         <i className="bi bi-quote quote-icon-left"></i>
-                        <span>
-                          The only way to do great work is to love what you do.
-                        </span>
+                        <span>The only way to do great work is to love what you do.</span>
                         <i className="bi bi-quote quote-icon-right"></i>
                       </p>
                       <h3>Steve Jobs</h3>
@@ -136,11 +115,7 @@ const Quotes = () => {
                     </div>
                   </div>
                   <div className="col-lg-2 text-center">
-                    <img
-                      src="src/assets/img/quotes/steve.jpg"
-                      className="img-fluid quote-img"
-                      alt="Steve Jobs"
-                    />
+                    <img src="src/assets/img/quotes/steve.jpg" className="img-fluid quote-img" alt="Steve Jobs" />
                   </div>
                 </div>
               </div>
@@ -153,8 +128,7 @@ const Quotes = () => {
                       <p>
                         <i className="bi bi-quote quote-icon-left"></i>
                         <span>
-                          Do not judge me by my success, judge me by how many
-                          times I fell down and got back up again
+                          Do not judge me by my success, judge me by how many times I fell down and got back up again
                         </span>
                         <i className="bi bi-quote quote-icon-right"></i>
                       </p>
@@ -163,11 +137,7 @@ const Quotes = () => {
                     </div>
                   </div>
                   <div className="col-lg-2 text-center">
-                    <img
-                      src="src/assets/img/quotes/nelson.jpg"
-                      className="img-fluid quote-img"
-                      alt="Nelson Mandela"
-                    />
+                    <img src="src/assets/img/quotes/nelson.jpg" className="img-fluid quote-img" alt="Nelson Mandela" />
                   </div>
                 </div>
               </div>

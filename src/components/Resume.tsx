@@ -22,28 +22,18 @@ const Resume = () => {
               </p>
               <ul>
                 <li>
-                  Spearhead administrative management, including legal setup,
-                  cash flow, and compliance with fiscal regulations.
+                  Spearhead administrative management, including legal setup, cash flow, and compliance with fiscal
+                  regulations.
                 </li>
                 <li>
-                  Define the company’s strategic direction: Go-to-Market
-                  strategy, organizational structure, and expansion roadmap.
+                  Define the company’s strategic direction: Go-to-Market strategy, organizational structure, and
+                  expansion roadmap.
                 </li>
+                <li>Oversee cross-functional teams, ensuring seamless operations and effective leadership.</li>
+                <li>Monitor key business KPIs, ensuring alignment with strategic goals and investor expectations.</li>
+                <li>Establish and maintain strong relationships with investors and shareholders.</li>
                 <li>
-                  Oversee cross-functional teams, ensuring seamless operations
-                  and effective leadership.
-                </li>
-                <li>
-                  Monitor key business KPIs, ensuring alignment with strategic
-                  goals and investor expectations.
-                </li>
-                <li>
-                  Establish and maintain strong relationships with investors and
-                  shareholders.
-                </li>
-                <li>
-                  Represent the company at industry events, enhancing brand
-                  visibility and networking opportunities.
+                  Represent the company at industry events, enhancing brand visibility and networking opportunities.
                 </li>
               </ul>
             </div>
@@ -54,33 +44,20 @@ const Resume = () => {
                 <em>CARPET PLUS S.A</em>
               </p>
               <ul>
+                <li>Conduct in-depth problem analysis to develop tailored technical solutions.</li>
                 <li>
-                  Conduct in-depth problem analysis to develop tailored
-                  technical solutions.
+                  Collaborate on business planning, including idea validation, data sourcing, and business model
+                  development.
                 </li>
                 <li>
-                  Collaborate on business planning, including idea validation,
-                  data sourcing, and business model development.
+                  Lead funding strategies and coordinate fundraising efforts, focusing on financial projections and
+                  investment models.
                 </li>
+                <li>Design the brand identity, including visual assets and mockups.</li>
+                <li>Manage DNS configuration and cloud security (Root Login, SSH, Postfix, ClamAV, Fail2Ban).</li>
+                <li>Install and configure web servers (Apache, PHP, MySQL, Node.js, Redis) for optimal performance.</li>
                 <li>
-                  Lead funding strategies and coordinate fundraising efforts,
-                  focusing on financial projections and investment models.
-                </li>
-                <li>
-                  Design the brand identity, including visual assets and
-                  mockups.
-                </li>
-                <li>
-                  Manage DNS configuration and cloud security (Root Login, SSH,
-                  Postfix, ClamAV, Fail2Ban).
-                </li>
-                <li>
-                  Install and configure web servers (Apache, PHP, MySQL,
-                  Node.js, Redis) for optimal performance.
-                </li>
-                <li>
-                  Oversee the complete lifecycle of the application:
-                  development, testing, deployment, and optimization.
+                  Oversee the complete lifecycle of the application: development, testing, deployment, and optimization.
                 </li>
               </ul>
             </div>
@@ -88,21 +65,16 @@ const Resume = () => {
               <h4>Freelance Web Developer</h4>
               <h5>2014 – 2016</h5>
               <p>
-                <em>
-                  ProDimensions, Media-Center, Hand&Craft, SheShares, Mazed,
-                  Ahmini, and Livero delivery
-                </em>
+                <em>ProDimensions, Media-Center, Hand&Craft, SheShares, Mazed, Ahmini, and Livero delivery</em>
               </p>
               <ul>
                 <li>
-                  Recommended and provided expert consultation to clients on the
-                  most suitable application solutions tailored to their specific
-                  needs.
+                  Recommended and provided expert consultation to clients on the most suitable application solutions
+                  tailored to their specific needs.
                 </li>
                 <li>Delivered customized web solutions.</li>
                 <li>
-                  Provided full lifecycle development from concept to
-                  deployment, ensuring high-quality standards.
+                  Provided full lifecycle development from concept to deployment, ensuring high-quality standards.
                 </li>
               </ul>
             </div>
@@ -113,13 +85,9 @@ const Resume = () => {
                 <em>DevMIX</em>
               </p>
               <ul>
+                <li>Collaborated with clients to ensure their web projects met business needs and goals.</li>
                 <li>
-                  Collaborated with clients to ensure their web projects met
-                  business needs and goals.
-                </li>
-                <li>
-                  Designed and developed websites using PHP4 and Joomla CMS,
-                  while staying updated with industry trends.
+                  Designed and developed websites using PHP4 and Joomla CMS, while staying updated with industry trends.
                 </li>
               </ul>
             </div>
@@ -130,16 +98,9 @@ const Resume = () => {
                 <em>Bifordecide</em>
               </p>
               <ul>
-                <li>
-                  Contributed to the modeling and design of a Data Warehouse.
-                </li>
-                <li>
-                  Developed and maintained semantic layers and reporting tools.
-                </li>
-                <li>
-                  Administered a data distribution platform to ensure continuous
-                  data flow.
-                </li>
+                <li>Contributed to the modeling and design of a Data Warehouse.</li>
+                <li>Developed and maintained semantic layers and reporting tools.</li>
+                <li>Administered a data distribution platform to ensure continuous data flow.</li>
               </ul>
             </div>
             <div className="resume-item">
@@ -149,25 +110,11 @@ const Resume = () => {
                 <em>Speleology and Climbing Association of Zaghouan</em>
               </p>
               <ul>
-                <li>
-                  Gather and analyze association requirements to develop
-                  customized solutions.
-                </li>
-                <li>
-                  Design and implement MySQL databases, ensuring optimization
-                  and normalization.
-                </li>
-                <li>
-                  Convert PSD designs to HTML and ensure seamless web
-                  integration.
-                </li>
-                <li>
-                  Deploy and configure web servers for efficient performance.
-                </li>
-                <li>
-                  Ensure ongoing maintenance, SEO optimization, and performance
-                  improvements.
-                </li>
+                <li>Gather and analyze association requirements to develop customized solutions.</li>
+                <li>Design and implement MySQL databases, ensuring optimization and normalization.</li>
+                <li>Convert PSD designs to HTML and ensure seamless web integration.</li>
+                <li>Deploy and configure web servers for efficient performance.</li>
+                <li>Ensure ongoing maintenance, SEO optimization, and performance improvements.</li>
               </ul>
             </div>
           </div>
@@ -178,10 +125,7 @@ const Resume = () => {
                 <h4>Bachelor’s Degree in Computer Science</h4>
                 <h5>2008 – 2012</h5>
                 <p>
-                  <cite>
-                    Higher Institute of Technological Studies of Charguia (ISET
-                    Charguia)
-                  </cite>
+                  <cite>Higher Institute of Technological Studies of Charguia (ISET Charguia)</cite>
                 </p>
                 <p>Major: development of information systems</p>
               </div>
@@ -210,9 +154,7 @@ const Resume = () => {
                 <p>
                   <em>Tunisair Express</em>
                 </p>
-                <p>
-                  Developed a catering store management application using 4D.
-                </p>
+                <p>Developed a catering store management application using 4D.</p>
               </div>
               <div className="resume-item">
                 <h4>Advanced Internship</h4>
@@ -220,10 +162,7 @@ const Resume = () => {
                 <p>
                   <em>DevClic</em>
                 </p>
-                <p>
-                  Developed a vehicle fleet management application using C# and
-                  SQL Server CE.
-                </p>
+                <p>Developed a vehicle fleet management application using C# and SQL Server CE.</p>
               </div>
               <div className="resume-item">
                 <h4>Initiation Internship</h4>
@@ -231,10 +170,7 @@ const Resume = () => {
                 <p>
                   <em>DevClic</em>
                 </p>
-                <p>
-                  Created an IT asset management application using PHP4 and
-                  MySQL.
-                </p>
+                <p>Created an IT asset management application using PHP4 and MySQL.</p>
               </div>
             </div>
           </div>
