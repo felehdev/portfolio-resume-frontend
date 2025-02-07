@@ -1,7 +1,6 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   css: {
@@ -9,6 +8,18 @@ export default defineConfig({
       scss: {
         silenceDeprecations: ["mixed-decls", "color-functions", "global-builtin", "import"],
       },
+    },
+  },
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    host: "0.0.0.0",
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      host: "localhost",
+      port: 5173,
     },
   },
 });
