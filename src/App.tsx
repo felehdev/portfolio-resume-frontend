@@ -1,3 +1,4 @@
+import PerfectScrollbar from "perfect-scrollbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -8,6 +9,8 @@ import Skills from "./components/Skills";
 import "./assets/styles/main.scss";
 
 function App() {
+  new PerfectScrollbar("#root", {});
+
   return (
     <>
       <Home />
