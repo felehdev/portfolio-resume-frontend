@@ -1,23 +1,47 @@
-# Portfolio Resume Frontend
+# 📄 Portfolio Resume
 
-## Collaboration Convention for Portfolio Resume Project
+Portfolio Resume is a web application designed to help users effortlessly create professional CVs and portfolios. With a user-friendly interface, users can input their personal information, work experience, education, skills, and other relevant details. The app then generates a well-formatted CV and portfolio, ready to be downloaded or shared online.
 
-### Branch Naming Conventions
+Whether you are a job seeker, freelancer, or professional, Portfolio Resume provides all the tools you need to create an outstanding CV and portfolio.
+
+## 🚀 Features
+
+- ✅ **Customizable Templates** – Choose from a variety of professional templates to match your style and industry.
+- ✅ **Real-time Preview** – Instantly see how your CV and portfolio will look as you edit.
+- ✅ **Easy Editing** – Modify your information anytime, with instant updates.
+- ✅ **Multiple Export Options** – Download your CV and portfolio in PDF, Word, or HTML formats.
+- ✅ **Secure Storage** – Your data is safely stored and accessible from any device.
+
+## 🛠️ Tech Stack
+
+| Technology | Description          |
+| ---------- | -------------------- |
+| Frontend   | React.js TS          |
+| Backend    | Node.js & Express.js |
+| Database   | MongoDB              |
+
+## 🎯 Project Goals
+
+This project aims to:
+
+- 🔹 Improve workflow efficiency and collaboration.
+- 🔹 Follow best practices in full-stack development.
+- 🔹 Enhance our experience with React.js, Node.js, and MongoDB.
+
+## 🤝 Collaboration Convention
+
+### 🔀 Branch Guidelines
 
 When creating a branch, use one of the following prefixes to categorize your work:
 
-#### Prefixes
+| Prefix   | Purpose                               |
+| -------- | ------------------------------------- |
+| feature/ | Developing new features               |
+| bugfix/  | Fixing bugs                           |
+| hotfix/  | Addressing critical production issues |
+| docs/    | Updating documentation                |
 
-- **`feature`**
-  - _Description_: Developing new features.
-- **`bugfix`**
-  - _Description_: Fixing bugs in the code.
-- **`hotfix`**
-  - _Description_: Fixing critical bugs in the production environment.
-- **`docs`**
-  - _Description_: Writing, updating, or fixing documentation.
-
-#### Example Branch Names
+**Example Branch Names:**
 
 ```git
 feature/T-456-user-authentication
@@ -26,52 +50,55 @@ hotfix/T-321-security-patch
 docs/T-654-update-readme
 ```
 
----
+### 📝 Commit Guidelines
 
-### Commit Message Types
+Use the following commit message types to ensure clarity and consistency:
 
-When committing changes, use one of the following types to categorize your commit:
+| Commit Type | Description                                                               | Example                                              |
+| ----------- | ------------------------------------------------------------------------- | ---------------------------------------------------- |
+| build       | Changes affecting build configuration, dependencies, or development tools | `build: update npm dependencies`                     |
+| chore       | Updates to auxiliary tools or configurations                              | `chore: update eslint config`                        |
+| docs        | Documentation-only changes                                                | `docs: update README with installation instructions` |
+| feat        | Adding a new feature (triggers a MINOR version bump)                      | `feat: add user authentication`                      |
+| fix         | Bug fixes (triggers a PATCH version bump)                                 | `fix: resolve issue with login redirect`             |
+| perf        | Performance improvements                                                  | `perf: optimize database query`                      |
+| refactor    | Code restructuring without changing functionality                         | `refactor: simplify authentication logic`            |
+| style       | Formatting, indentation, or stylistic changes                             | `style: reformat code for better readability`        |
+| test        | Adding or modifying tests                                                 | `test: add unit tests for login`                     |
 
-#### Types
+**Example Commit Messages:**
 
-- **`build`**
-
-  - _Description_: Changes that affect the build configuration, external dependencies, development tools or other changes irrelevant to the user.
-  - _Examples_: Updating npm packages, modifying Webpack configuration.
-
-- **`chore`**
-
-  - _Description_: Changes to the build process or auxiliary tools and libraries such as documentation generation.
-  - _Examples_: Adding images, updating dependencies, configuration changes.
-
-- **`docs`**
-  - _Description_: Documentation-only changes.
-  - _Examples_: Updating README, API documentation.
-- **`feat`**
-  - _Description_: A new feature for the user, not a new feature for build script. Such commit will trigger a release bumping a MINOR version.
-  - _Examples_: Adding a new module, API endpoint, or UI component.
-- **`fix`**
-  - _Description_: A bug fix for the user, not a fix to a build script. Such commit will trigger a release bumping a PATCH version.
-  - _Examples_: Correcting a typo, fixing a broken feature.
-- **`perf`**
-  - _Description_: A code change that improves performance.
-  - _Examples_: Optimizing an algorithm, improving database queries.
-- **`refactor`**
-  - _Description_: A code change that neither fixes a bug nor adds a feature, e.g. renaming a variable.
-  - _Examples_: Simplifying logic, reorganizing code for clarity.
-- **`style`**
-  - _Description_: Changes that do not affect the meaning of the code, formatting changes, missing semicolons, etc.
-  - _Examples_: Formatting, indentation, renaming variables.
-- **`test`**
-  - _Description_: Adding or correcting tests.
-  - _Examples_: Writing unit tests, fixing broken test cases.
-
-#### Example Commit Messages
-
-```git
+```bash
 feat: add user authentication
 fix: resolve issue with login redirect
 docs: update README with installation instructions
 perf: improve database query efficiency
 style: reformat code for better readability
 ```
+
+## 📌 How to Contribute
+
+1. Fork the repository.
+2. Create a new feature branch:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "feat: describe your change"
+   ```
+4. Push the changes:
+   ```bash
+   git push origin feature/new-feature
+   ```
+5. Open a Pull Request and describe your changes.
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+## ✨ Contributors
+
+Thanks to everyone contributing to this project! 😊
+
+If you have any questions or suggestions, feel free to reach out. 🚀
