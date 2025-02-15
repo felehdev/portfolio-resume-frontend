@@ -1,6 +1,7 @@
 import PerfectScrollbar from "perfect-scrollbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import Quotes from "./components/Quotes";
 import Resume from "./components/Resume";
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <Home />
       <About />
       <Skills />
