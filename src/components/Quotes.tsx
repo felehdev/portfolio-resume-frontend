@@ -1,6 +1,8 @@
-const Quotes = () => {
+import { forwardRef } from "react";
+
+const Quotes = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
   return (
-    <article id="quotes" className="quotes section">
+    <article className="quotes section" ref={ref}>
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col">
@@ -148,6 +150,8 @@ const Quotes = () => {
       </div>
     </article>
   );
-};
+});
+
+Quotes.displayName = "Quotes";
 
 export default Quotes;

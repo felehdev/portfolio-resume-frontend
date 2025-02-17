@@ -13,8 +13,8 @@
   width: 140px;
 }
 
-.navmenu a,
-.navmenu a:focus {
+.navmenu button,
+.navmenu button:focus {
   color: $dark;
   font-family: $font-family-tertiary;
   display: flex;
@@ -30,43 +30,43 @@
   transition: 0.3s;
 }
 
-.navmenu a i,
+.navmenu button i,
 .navmenu a:focus i {
   font-size: 20px;
 }
 
-.navmenu a span,
-.navmenu a:focus span {
+.navmenu button span,
+.navmenu button:focus span {
   padding: 0 5px 0 7px;
 }
 
 @media (min-width: 992px) {
-  .navmenu a,
-  .navmenu a:focus {
+  .navmenu button,
+  .navmenu button:focus {
     max-width: 56px;
   }
 
-  .navmenu a span,
-  .navmenu a:focus span {
+  .navmenu button span,
+  .navmenu button:focus span {
     display: none;
   }
 }
 
-.navmenu a:hover,
+.navmenu button:hover,
 .navmenu .active,
 .navmenu .active:focus,
-.navmenu li:hover > a {
+.navmenu li:hover > button {
   color: $white;
   background: $primary;
 }
 
-.navmenu a:hover,
-.navmenu li:hover > a {
+.navmenu button:hover,
+.navmenu li:hover > button {
   //max-width: 100%;
   color: $white;
 }
 
-.navmenu a:hover span,
-.navmenu li:hover > a span {
+.navmenu button:hover span,
+.navmenu li:hover > button span {
   display: block;
 }

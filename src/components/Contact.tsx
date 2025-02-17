@@ -1,6 +1,8 @@
-const Contact = () => {
+import { forwardRef } from "react";
+
+const Contact = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
   return (
-    <article id="contact" className="contact section spad">
+    <article id="contact" className="contact section spad" ref={ref}>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -59,6 +61,8 @@ const Contact = () => {
       </div>
     </article>
   );
-};
+});
+
+Contact.displayName = "Contact";
 
 export default Contact;

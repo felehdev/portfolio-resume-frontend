@@ -1,6 +1,8 @@
-const Skills = () => {
+import { forwardRef } from "react";
+
+const Skills = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
   return (
-    <article id="skills" className="skills section">
+    <article id="skills" className="skills section" ref={ref}>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -189,6 +191,8 @@ const Skills = () => {
       </div>
     </article>
   );
-};
+});
+
+Skills.displayName = "Skills";
 
 export default Skills;

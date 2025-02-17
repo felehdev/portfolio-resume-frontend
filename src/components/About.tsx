@@ -1,6 +1,8 @@
-const About = () => {
+import { forwardRef } from "react";
+
+const About = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
   return (
-    <article id="about" className="about section">
+    <article id="about" className="about section" ref={ref}>
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col">
@@ -68,6 +70,8 @@ const About = () => {
       </div>
     </article>
   );
-};
+});
+
+About.displayName = "About";
 
 export default About;
