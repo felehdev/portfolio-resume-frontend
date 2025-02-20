@@ -1,6 +1,10 @@
 import { forwardRef } from "react";
 
-const Quotes = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
+interface QuotesProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Quotes = forwardRef<HTMLElement, QuotesProps>((_, ref) => {
   return (
     <article className="quotes section" ref={ref}>
       <div className="container" data-aos="fade-up">

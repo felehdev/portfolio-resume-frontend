@@ -1,6 +1,10 @@
 import { forwardRef } from "react";
 
-const Resume = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
+interface ResumeProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Resume = forwardRef<HTMLElement, ResumeProps>((_, ref) => {
   return (
     <article className="resume section" ref={ref}>
       <div className="container">

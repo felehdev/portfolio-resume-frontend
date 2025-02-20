@@ -1,6 +1,10 @@
 import { forwardRef } from "react";
 
-const Contact = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
+interface ContactProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Contact = forwardRef<HTMLElement, ContactProps>((_, ref) => {
   return (
     <article id="contact" className="contact section spad" ref={ref}>
       <div className="container">

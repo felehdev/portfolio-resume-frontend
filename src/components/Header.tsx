@@ -1,20 +1,26 @@
 import { useState } from "react";
 import Button from "./Button";
 
+interface Section {
+  label: string;
+  icon: string;
+  ref: React.RefObject<HTMLElement>;
+}
 interface HeaderProps {
   wrapper: React.RefObject<HTMLDivElement>;
   sections: {
-    hero: React.RefObject<HTMLElement>;
-    about: React.RefObject<HTMLElement>;
-    skills: React.RefObject<HTMLElement>;
-    resume: React.RefObject<HTMLElement>;
-    quotes: React.RefObject<HTMLElement>;
-    contact: React.RefObject<HTMLElement>;
+    hero: Section;
+    about: Section;
+    skills: Section;
+    resume: Section;
+    quotes: Section;
+    contact: Section;
   };
+  current: string | null;
 }
 
-const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
-  const [activeButton, setActiveButton] = useState<string | null>(null);
+const Header: React.FC<HeaderProps> = ({ wrapper, sections, current }) => {
+  const [activeButton, setActiveButton] = useState<string | null>("Home");
 
   const handleClick = (name: string) => {
     setActiveButton(name);
@@ -31,8 +37,8 @@ const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
               wrapper={wrapper}
               label="Home"
               icon="house-door-fill"
-              sectionRef={sections.hero}
-              isActive={activeButton === "Home"}
+              sectionRef={sections.hero.ref}
+              isActive={activeButton === "Home" || current === "Hero"}
               onClick={handleClick}
             />
           </li>
@@ -41,8 +47,8 @@ const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
               wrapper={wrapper}
               label="About"
               icon="info-square-fill"
-              sectionRef={sections.about}
-              isActive={activeButton === "About"}
+              sectionRef={sections.about.ref}
+              isActive={activeButton === "About" || current === "About"}
               onClick={handleClick}
             />
           </li>
@@ -51,8 +57,8 @@ const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
               wrapper={wrapper}
               label="Skills"
               icon="file-code-fill"
-              sectionRef={sections.skills}
-              isActive={activeButton === "Skills"}
+              sectionRef={sections.skills.ref}
+              isActive={activeButton === "Skills" || current === "Skills"}
               onClick={handleClick}
             />
           </li>
@@ -61,8 +67,8 @@ const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
               wrapper={wrapper}
               label="Resume"
               icon="file-text-fill"
-              sectionRef={sections.resume}
-              isActive={activeButton === "Resume"}
+              sectionRef={sections.resume.ref}
+              isActive={activeButton === "Resume" || current === "Resume"}
               onClick={handleClick}
             />
           </li>
@@ -71,8 +77,8 @@ const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
               wrapper={wrapper}
               label="Quotes"
               icon="quote navicon"
-              sectionRef={sections.quotes}
-              isActive={activeButton === "Quotes"}
+              sectionRef={sections.quotes.ref}
+              isActive={activeButton === "Quotes" || current === "Quotes"}
               onClick={handleClick}
             />
           </li>
@@ -81,8 +87,8 @@ const Header: React.FC<HeaderProps> = ({ wrapper, sections }) => {
               wrapper={wrapper}
               label="Contact"
               icon="envelope-fill"
-              sectionRef={sections.contact}
-              isActive={activeButton === "Contact"}
+              sectionRef={sections.contact.ref}
+              isActive={activeButton === "Contact" || current === "Contact"}
               onClick={handleClick}
             />
           </li>

@@ -1,7 +1,11 @@
 import { forwardRef, useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-const Hero = forwardRef<HTMLElement, Record<string, never>>((_, ref) => {
+interface HeroProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Hero = forwardRef<HTMLElement, HeroProps>((_, ref) => {
   const element1 = useRef<HTMLParagraphElement | null>(null);
   const element2 = useRef<HTMLParagraphElement | null>(null);
   const element3 = useRef<HTMLParagraphElement | null>(null);
