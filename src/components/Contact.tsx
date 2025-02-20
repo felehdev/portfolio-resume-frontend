@@ -1,6 +1,12 @@
-const Contact = () => {
+import { forwardRef } from "react";
+
+interface ContactProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Contact = forwardRef<HTMLElement, ContactProps>((_, ref) => {
   return (
-    <article id="contact" className="contact section spad">
+    <article id="contact" className="contact section spad" ref={ref}>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -59,6 +65,8 @@ const Contact = () => {
       </div>
     </article>
   );
-};
+});
+
+Contact.displayName = "Contact";
 
 export default Contact;

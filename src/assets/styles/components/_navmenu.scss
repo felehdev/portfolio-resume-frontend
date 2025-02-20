@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+.navmenu {
+  padding: 0;
+  z-index: 9997;
+  overflow: hidden;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+  width: 140px;
+}
+
+.navmenu button,
+.navmenu button:focus {
+  color: $dark;
+  font-family: $font-family-tertiary;
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  //border-radius: 50px;
+  background: $light;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.navmenu button i,
+.navmenu a:focus i {
+  font-size: 20px;
+}
+
+.navmenu button span,
+.navmenu button:focus span {
+  padding: 0 5px 0 7px;
+}
+
+@media (min-width: 992px) {
+  .navmenu button,
+  .navmenu button:focus {
+    max-width: 56px;
+  }
+
+  .navmenu button span,
+  .navmenu button:focus span {
+    display: none;
+  }
+}
+
+.navmenu button:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover > button {
+  color: $white;
+  background: $primary;
+}
+
+.navmenu button:hover,
+.navmenu li:hover > button {
+  //max-width: 100%;
+  color: $white;
+}
+
+.navmenu button:hover span,
+.navmenu li:hover > button span {
+  display: block;
+}

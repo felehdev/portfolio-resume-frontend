@@ -1,6 +1,12 @@
-const Skills = () => {
+import { forwardRef } from "react";
+
+interface SkillsProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Skills = forwardRef<HTMLElement, SkillsProps>((_, ref) => {
   return (
-    <article id="skills" className="skills section">
+    <article id="skills" className="skills section" ref={ref}>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -189,6 +195,8 @@ const Skills = () => {
       </div>
     </article>
   );
-};
+});
+
+Skills.displayName = "Skills";
 
 export default Skills;

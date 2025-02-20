@@ -1,9 +1,13 @@
+@use "perfect-scrollbar/css/perfect-scrollbar.css";
+
 @import "webfonts";
 @import "bootstrap/scss/functions";
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 @import "base";
 @import "section";
+@import "components/header";
+@import "components/navmenu";
 @import "components/home";
 @import "components/about";
 @import "components/skills";

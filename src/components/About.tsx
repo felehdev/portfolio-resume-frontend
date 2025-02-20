@@ -1,6 +1,12 @@
-const About = () => {
+import { forwardRef } from "react";
+
+interface AboutProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const About = forwardRef<HTMLElement, AboutProps>((_, ref) => {
   return (
-    <article id="about" className="about section">
+    <article id="about" className="about section" ref={ref}>
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col">
@@ -68,6 +74,8 @@ const About = () => {
       </div>
     </article>
   );
-};
+});
+
+About.displayName = "About";
 
 export default About;

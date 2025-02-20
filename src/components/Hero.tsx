@@ -1,7 +1,11 @@
-import { useEffect, useRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-const Home = () => {
+interface HeroProps {
+  ref?: React.Ref<HTMLElement>; // Allows the ref prop
+}
+
+const Hero = forwardRef<HTMLElement, HeroProps>((_, ref) => {
   const element1 = useRef<HTMLParagraphElement | null>(null);
   const element2 = useRef<HTMLParagraphElement | null>(null);
   const element3 = useRef<HTMLParagraphElement | null>(null);
@@ -42,7 +46,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="hero" className="hero section">
+    <article id="hero" className="hero section" ref={ref}>
       <div className="container">
         <div className="row justify-content-md-center py-5 hero__typed-container" data-aos="zoom-out">
           <div className="col-12 col-sm-10">
@@ -96,8 +100,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </article>
   );
-};
+});
 
-export default Home;
+Hero.displayName = "Hero";
+
+export default Hero;
